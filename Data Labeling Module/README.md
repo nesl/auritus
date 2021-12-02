@@ -25,6 +25,6 @@ There are four folders in this module.
 - Run ```Script_2_SHP.m```. Provide the appropriate subject number. It will automatically create a folder with appropriate subject ID and label the rows of the IMU data. It will place the labelled data in the current directory as ```sliced_HP/X/```, where X is the subject ID. Note that you can modify this script to support additional head poses or lower number of head poses.
 
 
-### How to do labeling for simple head-pose?
+### How to do labeling for complex head-pose?
 
 The labeling is similar to simple head-pose, except you will have a group of three bell curves (origin to target A, target A to target B, target B to origin) instead of two. The ```cursor_info``` variable should have size of whose size should be 1X(6m+4), where m is the number of target groups (each group has two targets).
