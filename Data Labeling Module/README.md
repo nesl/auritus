@@ -12,6 +12,7 @@ There are four folders in this module.
 ![SS_2](samp_shot_B.png)
 - Right click on any one of the points and select ```Export Cursor Data to Workspace```. Click ```OK``` in the upcoming dialogue window. You should see the ```cursor_info``` variable in the workspace now, whose size should be 1X18 (for 9 activities). 
 - Run ```Script_2_act.m```. Provide the appropriate subject number. It will automatically create a folder with appropriate subject ID and slice the activity data automatically. It will place the labelled data in the current directory as ```sliced/X/```, where X is the subject ID. Note that you can modify this script to support additional activities or lower number of activities.
+- Calibration nods are absent for participants 1 to 15 for continuous trajectories in the dataset. 
 
 ### How to do labeling for simple head-pose?
 

@@ -14,11 +14,12 @@ There are three main folders in the dataset, namely ```Activity Detection```, ``
 - There are two subfolders in this folder, one contains sliced activity data, with each activity in separate ```.csv``` file, and the other contains raw continuous trajectories, with all the activities one after the other in one ```.csv``` file. 
 - Each of these two subfolders are further divided into participant specific folders, with the folder names corresponding to participant ID (e.g., 1, 2, 3, ..... , 45).
 - The sampling rate was set to 100 Hz, however, there is sampling rate jitter and missing data in the dataset due to packet drops and timestamp misalignment. A low-pass filter of 5 Hz was used, and the accelerometer and gyroscope ranges were set to +- 4g and +- 500 deg/s. The BLE advertisement and connection intervals were set to 45-55 mS and 20-30 mS.
-- No ground truth is provided due to privacy concerns. However, for the continuous trajectories, each activity is separated by calibration nods, which are visible in the gyroscope plot. More details are provided in the data labelling module.
+- No ground truth is provided due to privacy concerns. However, for the continuous trajectories, each activity is separated by calibration nods (for subjects 16 to 45), which are visible in the gyroscope plot. More details are provided in the data labelling module.
 ##### File Structure
-- The first three columns of each ```.csv``` file provide the accelerometer readings (in g), the next three columns provide gyroscope readings (in deg/s).
-- The seventh column correspond to timestamp (in sec.)
+- The first three columns of each ```.csv``` file for sliced activities provide the accelerometer readings (in g), the next three columns provide gyroscope readings (in deg/s).
+- The seventh column for sliced activities correspond to timestamp (in sec.)
 - For sliced activities, the last character before each ```.csv``` file corresponds to the activity: F - Falling, J - Jumping, R - Running/Jogging, Si - Sitting, St: Standing, Tl: Turning Left, Tr: Turning Right, W: Walking.
+- For continuous activities, the first column corresponds to UNIX timestamps, the last six columns correspond to accelerometer and gyroscope readings.
 
 ### Simple and Complex Head Pose
 - The folders are split into participant specific folders, with the folder names corresponding to participant ID (e.g., 1, 2, 3, ..... , 45).
