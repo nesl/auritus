@@ -6,7 +6,8 @@
 ### Required items if you want to collect your own dataset:
 - An Android Smartphone 
 - eSense earables from Nokia Bell Labs (check Data Collection Module)
-- Optitrack MoCap Setup (check Data Collection Module)
+- Optitrack MoCap Setup with Motive:Tracker software (check Data Collection Module)
+- Mokka toolkit (optional, check Data Collection Module)
 - A cap where Optitrack markers can be attached to 
 - Laser RangeFinder (check Data Collection Module)
 - Digital Compass (check Data Collection Module)
