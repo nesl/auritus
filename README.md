@@ -35,5 +35,14 @@ There are four modules in Auritus. We provide the necessary code and guide to wo
 
 If you want to contribute to any layer (including the dataset and applications) of Auritus, please email us at swapnilsayan@g.ucla.edu or mbs@ucla.edu (Prof. Mani Srivastava, UCLA) regarding your contribution. We are happy to host interesting applications or improvements (or tools).
 
+## Citation
+Please cite this as:
+
+Saha S.S., Sandha S.S., Pei S., Jain V., Wang Z., Li Y., Sarker A., Srivastava M. (2021) Auritus - An Open Source Optimization Toolkit for Training and Deployment of Human Movement Models and Filters Using Earables. (Under Review) Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (2021): 1-30.
+
+## Acknowledgements
+We thank Nokia Bell Labs for providing us with the eSense earable hardware, which we used in this framework and the paper.
+
+The research reported in this paper was sponsored in part by: the CONIX Research Center, one of six centers in JUMP, a Semiconductor Research Corporation (SRC) program sponsored by DARPA; by the IoBT REIGN Collaborative Research Alliance funded by the Army Research Laboratory (ARL) under Cooperative Agreement W911NF-17-2-0196; by the NIH mHealth Center for Discovery, Optimization and Translation of Temporally-Precise Interventions (mDOT) under award 1P41EB028242; by the National Science Foundation (NSF) under awards \# OAC-1640813 and CNS-1822935; and, by and the King Abdullah University of Science and Technology (KAUST) through its Sensor Innovation research program. The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the ARL, DARPA, KAUST, NIH, NSF, SRC, or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Government purposes notwithstanding any copyright notation here on.
 
 
