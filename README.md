@@ -2,8 +2,14 @@
 
 ![overview](earable_framework_final.png)
 
+## Summary
+Smart ear-worn devices (called earables) are being equipped with various onboard sensors and algorithms, transforming earphones from simple audio transducers to multi-modal interfaces making rich inferences about human motion and vital signals. However, developing and deploying sensory applications using earables is currently quite cumbersome with several barriers in the way. First, time-series data from earable sensors incorporate information about physical phenomena in complex settings, requiring machine-learning (ML) models learned from large-scale labeled data. This is challenging in the context of earables because large-scale open-source datasets are missing. Secondly, the small size and compute constraints of earable devices make on-device integration of many existing algorithms for tasks such as human activity and head-pose estimation difficult. To address these challenges, we introduce Auritus, an extendable and open-source optimization toolkit designed to enhance and replicate earable applications. Auritus serves two primary functions. Firstly, Auritus handles data collection, pre-processing, and labeling tasks for creating customized earable datasets using graphical tools. The system includes an open-source dataset with 2.43 million inertial samples related to head and full-body movements, consisting of 34 head poses and 9 activities from 45 volunteers. Secondly, Auritus provides a tightly-integrated hardware-in-the-loop (HIL) optimizer and TinyML interface to develop and deploy lightweight and real-time machine-learning (ML) models for activity detection and filters for head-pose tracking. To validate the utlity of Auritus, we showcase three sample applications, namely fall detection, spatial audio rendering, and augmented reality (AR) interfacing. Auritus recognizes activities with 98% test accuracy using real-time models as small as 6 kB. Our models are 98x smaller and 6% more accurate over the state-of-the-art. We also estimate head pose with absolute errors as low as 5 degrees using 20kB filters, achieving up to 1.6x precision improvement over existing techniques. We make the entire system open-source so that researchers and developers can contribute to any layer of the system or rapidly prototype their applications using our dataset and algorithms.
 
-## Required items if you want to collect your own dataset:
+## Framework Architecture
+
+There are four modules in Auritus. We provide the necessary code and guide to work with each module in four models, namely ```Data Collection Module```, ```Data Labeling Module```, ```Filter Development and Deployment```, and ```Model Development and Deployment```. We also provide the dataset in the ```Dataset``` folder. Each folder has extensive guides on how to use the contents of each module.
+
+## Required items if you want to collect your own dataset
 - An Android Smartphone 
 - eSense earables from Nokia Bell Labs (check Data Collection Module)
 - Optitrack MoCap Setup with Motive:Tracker software (check Data Collection Module)
@@ -14,14 +20,16 @@
 - Sticky Notes
 - Laser Pointer
 
-## Required items for all modules:
+## Required items for all modules
 - A computer running MacOS (if you want to collect your own data, perform labeling and use MATLAB coder).
 - A GPU Workstation running Ubuntu 20.04 (to train TinyML models and perform NAS).
 - MATLAB R2021b (with Classification Learner, MATLAB Coder, and Neural Network Pattern Recognition apps) must be installed on both machines. The three apps are available via the Statistics and Machine Learning Toolbox and MATLAB coder. https://www.mathworks.com/products/matlab.html, https://www.mathworks.com/products.html
 - Python 3.8+ must be installed on both machines, preferably through Anaconda or Virtualenv, https://docs.conda.io/en/latest/, https://virtualenv.pypa.io/en/latest/
-- Python package requirements are listed in the folders for each modules.
+- Python package requirements are listed in the folders for each modules. Please install them before running the Python scripts. Note that Tensorflow 2.5.0 is a must for working with the TinyML model scripts. Tensorflow 1.x would not work.
 - Couple of STM32 Nucleo Boards (must be Mbed enabled) for hardware-in-the-loop NAS, https://www.st.com/en/evaluation-tools/stm32-nucleo-boards.html, https://os.mbed.com/platforms/
 - Arduino IDE, https://www.arduino.cc/en/software/
 - C/C++ compiler for MATLAB coder, Arduino IDE, Mbed CLI and conversion of TinyML models to C (your computer will generally come with one).
 - GNU ARM Embedded Toolchain (for Mbed CLI), https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm
+
+
 
