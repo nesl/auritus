@@ -34,6 +34,10 @@ def import_auritus_activity_dataset(dataset_folder = 'Train_Val_test/', use_time
                 time_vec = cur_train[:,6]
                 cur_train = np.transpose(np.vstack((acc,gyr,time_vec)))
         cur_label = labels.index([ele for ele in labels if(ele in line)][0])
+        if(cur_label==8):
+        	cur_label=1
+        else:
+        	cur_label=0
         windows = SlidingWindow(size=window_size, stride=stride)
         cur_train_3D = windows.fit_transform(cur_train[:,0])
         for i in range(1,cur_train.shape[1]):

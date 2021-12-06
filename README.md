@@ -7,7 +7,7 @@ Smart ear-worn devices (called earables) are being equipped with various onboard
 
 ## Framework Architecture
 
-There are four modules in Auritus. We provide the necessary code and guide to work with each module in four models, namely ```Data Collection Module```, ```Data Labeling Module```, ```Filter Development and Deployment```, and ```Model Development and Deployment```. We also provide the dataset in the ```Dataset``` folder. Each folder has extensive guides on how to use the contents of each module. Lastly, we provide code for the three canonical applications we showcased in the paper, namely fall detection, binaural audio rendering and interacting with AR frameworks.
+There are four modules in Auritus. We provide the necessary code and guide to work with each module in four models, namely ```Data Collection Module```, ```Data Labeling Module```, ```Filter Development and Deployment```, and ```Model Development and Deployment```. We also provide the dataset in the ```Dataset``` folder. Each folder has extensive guides on how to use the contents of each module. Lastly, we provide code for the three canonical applications we showcased in the paper in the folder titled ```Applications```, namely fall detection, binaural audio rendering and interacting with AR frameworks.
 
 ## Required items if you want to collect your own dataset
 - An Android Smartphone 
@@ -33,7 +33,7 @@ There are four modules in Auritus. We provide the necessary code and guide to wo
 
 ## How to contribute to Auritus
 
-If you want to contribute to any layer (including the dataset) of Auritus, please email us at swapnilsayan@g.ucla.edu or mbs@ucla.edu (Prof. Mani Srivastava, UCLA) regarding your contribution.
+If you want to contribute to any layer (including the dataset and applications) of Auritus, please email us at swapnilsayan@g.ucla.edu or mbs@ucla.edu (Prof. Mani Srivastava, UCLA) regarding your contribution. We are happy to host interesting applications or improvements (or tools).
 
 
 
