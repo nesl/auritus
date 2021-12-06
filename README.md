@@ -3,7 +3,7 @@
 ![overview](earable_framework_final.png)
 
 
-### Required items if you want to collect your own dataset:
+## Required items if you want to collect your own dataset:
 - An Android Smartphone 
 - eSense earables from Nokia Bell Labs (check Data Collection Module)
 - Optitrack MoCap Setup with Motive:Tracker software (check Data Collection Module)
@@ -14,7 +14,7 @@
 - Sticky Notes
 - Laser Pointer
 
-### Required items for all modules:
+## Required items for all modules:
 - A computer running MacOS (if you want to collect your own data, perform labeling and use MATLAB coder).
 - A GPU Workstation running Ubuntu 20.04 (to train TinyML models and perform NAS).
 - MATLAB R2021b (with Classification Learner, MATLAB Coder, and Neural Network Pattern Recognition apps) must be installed on both machines. The three apps are available via the Statistics and Machine Learning Toolbox and MATLAB coder. https://www.mathworks.com/products/matlab.html, https://www.mathworks.com/products.html
