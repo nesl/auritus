@@ -31,5 +31,9 @@ There are four modules in Auritus. We provide the necessary code and guide to wo
 - C/C++ compiler for MATLAB coder, Arduino IDE, Mbed CLI and conversion of TinyML models to C (your computer will generally come with one).
 - GNU ARM Embedded Toolchain (for Mbed CLI), https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm
 
+## How to contribute to Auritus
+
+If you want to contribute to any layer (including the dataset) of Auritus, please email us at swapnilsayan@g.ucla.edu or mbs@ucla.edu regarding your contribution.
+
 
 
