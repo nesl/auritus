@@ -11,12 +11,12 @@ There are four modules in Auritus. We provide the necessary code and guide to wo
 
 ## Required items if you want to collect your own dataset
 - An Android Smartphone 
-- eSense earables from Nokia Bell Labs (check Data Collection Module)
-- Optitrack MoCap Setup with Motive:Tracker software (check Data Collection Module)
-- Mokka toolkit (optional, check Data Collection Module)
+- eSense earables from Nokia Bell Labs (check ```Data Collection Module```)
+- Optitrack MoCap Setup with Motive:Tracker software (check ```Data Collection Module``` and ```Dataset```)
+- Mokka toolkit (optional, check ```Dataset```)
 - A cap where Optitrack markers can be attached to 
-- Laser RangeFinder (check Data Collection Module)
-- Digital Compass (check Data Collection Module)
+- Laser RangeFinder (check ```Data Collection Module```)
+- Digital Compass (check ```Data Collection Module```)
 - Sticky Notes
 - Laser Pointer
 

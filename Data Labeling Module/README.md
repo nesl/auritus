@@ -22,10 +22,14 @@ There are four folders in this module.
 - With the help of the ground truth videos, start clicking on the start and end points of each head movement. A single head rotation on the gyroscope time plot essentially consists of a triangular/bell-shaped curve peak. Faster head-movements result in thinner and taller peaks, slower head-movements results in thicker and smaller peaks. For simple head movements, you will see a group of two peaks together (origin to target, target to origin). Make sure you click the points in order and only place points on one of the three gyroscope plots. Note that the first two and last two points should signify the starts and ends of beginning and terminating calibration nods. In addition, you can use the ```brush``` function in the MATLAB figure window to select erroneous regions in the plot and correct them (they will show up as red in the plot, you can go to ```Tools > Brushing > Replace With > Constants``` in the MATLAB figure window to specify correction for a specific brushed region.
 ![SS_4](samp_shot_D.png)
 ![SS_5](samp_shot_E.png)
-- Right click on any one of the points and select ```Export Cursor Data to Workspace```. Click ```OK``` in the upcoming dialogue window. You should see the ```cursor_info``` variable in the workspace now, whose size should be 1X(4n+4), where n is the number of targets.
+- Right click on any one of the points and select ```Export Cursor Data to Workspace```. Click ```OK``` in the upcoming dialogue window. You should see the ```cursor_info``` variable in the workspace now, whose size should be 4n+4, where n is the number of targets.
 - Run ```Script_2_SHP.m```. Provide the appropriate subject number. It will automatically create a folder with appropriate subject ID and label the rows of the IMU data. It will place the labelled data in the current directory as ```sliced_HP/X/```, where X is the subject ID. Note that you can modify this script to support additional head poses or lower number of head poses.
 
 
 ### How to do labeling for complex head-pose?
 
-The labeling is similar to simple head-pose, except you will have a group of three bell curves (origin to target A, target A to target B, target B to origin) instead of two. The ```cursor_info``` variable should have size of whose size should be 1X(6m+4), where m is the number of target groups (each group has two targets).
+The labeling is similar to simple head-pose, except you will have a group of three bell curves (origin to target A, target A to target B, target B to origin) instead of two. The ```cursor_info``` variable should have size of whose size should be 6m+4, where m is the number of target groups (each group has two targets).
+
+### How will the labeled head-pose data look like?
+
+Check our ```Dataset``` folder.
