@@ -40,6 +40,10 @@ Please cite this as:
 
 Saha S.S., Sandha S.S., Pei S., Jain V., Wang Z., Li Y., Sarker A., Srivastava M. (2021) Auritus - An Open Source Optimization Toolkit for Training and Deployment of Human Movement Models and Filters Using Earables. (Under Review) Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (2021): 1-30.
 
+## Code Credits
+
+We provide appropriate credits for code we have borrowed inside folders in the ```README``` files through sections titled ```Useful documentation```.
+
 ## Acknowledgements
 We thank Nokia Bell Labs for providing us with the eSense earable hardware, which we used in this framework and the paper.
 
