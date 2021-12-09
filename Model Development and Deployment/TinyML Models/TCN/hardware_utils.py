@@ -8,13 +8,14 @@ import tensorflow as tf
 import tensorflow.compat.v1.keras.backend as K
 
 #add your target hardware properties here
-device_list = ["NUCLEO_F746ZG","NUCLEO_L476RG", "NUCLEO_F446RE", "ARCH_MAX"]
+device_list = ["NUCLEO_F746ZG","NUCLEO_L476RG", "NUCLEO_F446RE", "ARCH_MAX", "Esense"]
 arenaSize_list = [np.array([10,30,50,75,100,150,175,200,250,280,280]),
                   np.array([10,25,40,70,85,100,100]),
                   np.array([10,25,40,70,85,100,100]),
-                  np.array([10,25,40,70,95,120,140,160,170,170])]
-maxRAM_list = [300000, 100000,100000,180000]
-maxFlash_list = [800000,800000,400000,400000]
+                  np.array([10,25,40,70,95,120,140,160,170,170]),
+                  np.array([10,20,30,40,40])]
+maxRAM_list = [300000, 100000,100000,180000,45000]
+maxFlash_list = [800000,800000,400000,400000,15000000]
 
 class cd:
     def __init__(self, newPath):
