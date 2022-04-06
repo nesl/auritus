@@ -1,4 +1,4 @@
-# Auritus - An Open Source Optimization Toolkit for Training and Deployment of Human Movement Models and Filters Using Earables
+# Auritus: An Open-Source Optimization Toolkit for Training and Development of Human Movement Models and Filters Using Earables
 
 ![overview](earable_framework_final.png)
 
