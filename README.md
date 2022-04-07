@@ -1,4 +1,4 @@
-# Auritus: An Open-Source Optimization Toolkit for Training and Development of Human Movement Models and Filters Using Earables
+# AURITUS: An Open-Source Optimization Toolkit for Training and Development of Human Movement Models and Filters Using Earables
 
 ![overview](earable_framework_final.png)
 
@@ -41,7 +41,7 @@ If you want to contribute to any layer (including the dataset and applications) 
 ## Citation
 Please cite this as:
 
-Saha S.S., Sandha S.S., Pei S., Jain V., Wang Z., Li Y., Sarker A., Srivastava M. (2022) "Auritus: An Open-Source Optimization Toolkit for Training and Development of Human Movement Models and Filters Using Earables." (accepted) Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (2022): 1-34.
+Swapnil Sayan Saha, Sandeep Singh Sandha, Siyou Pei, Vivek Jain, Ziqi Wang, Yuchen Li, Ankur Sarker., Mani Srivastava (2022) "AURITUS: An Open-Source Optimization Toolkit for Training and Development of Human Movement Models and Filters Using Earables." (accepted) Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (2022): 1-34.
 
 ## Code Credits
 
