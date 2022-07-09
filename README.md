@@ -3,7 +3,7 @@
 ![overview](earable_framework_final.png)
 
 ## Paper
-Preprint (accepted): https://www.researchgate.net/publication/359759183_Auritus_An_Open-Source_Optimization_Toolkit_for_Training_and_Development_of_Human_Movement_Models_and_Filters_Using_Earables
+https://dl.acm.org/doi/10.1145/3534586 
 
 ## Summary
 Smart ear-worn devices (called earables) are being equipped with various onboard sensors and algorithms, transforming earphones from simple audio transducers to multi-modal interfaces making rich inferences about human motion and vital signals. However, developing sensory applications using earables is currently quite cumbersome with several barriers in the way. First, time-series data from earable sensors incorporate information about physical phenomena in complex settings, requiring machine-learning (ML) models learned from large-scale labeled data. This is challenging in the context of earables because large-scale open-source datasets are missing. Secondly, the small size and compute constraints of earable devices make on-device integration of many existing algorithms for tasks such as human activity and head-pose estimation difficult. To address these challenges, we introduce Auritus, an extendable and open-source optimization toolkit designed to enhance and replicate earable applications. Auritus serves two primary functions. Firstly, Auritus handles data collection, pre-processing, and labeling tasks for creating customized earable datasets using graphical tools. The system includes an open-source dataset with 2.43 million inertial samples related to head and full-body movements, consisting of 34 head poses and 9 activities from 45 volunteers. Secondly, Auritus provides a tightly-integrated hardware-in-the-loop (HIL) optimizer and TinyML interface to develop lightweight and real-time machine-learning (ML) models for activity detection and filters for head-pose tracking. To validate the utlity of Auritus, we showcase three sample applications, namely fall detection, spatial audio rendering, and augmented reality (AR) interfacing. Auritus recognizes activities with 91% leave 1-out test accuracy (98% test accuracy) using real-time models as small as 6-13 kB. Our models are 98-740x smaller and 3-6% more accurate over the state-of-the-art. We also estimate head pose with absolute errors as low as 5 degrees using 20kB filters, achieving up to 1.6x precision improvement over existing techniques. We make the entire system open-source so that researchers and developers can contribute to any layer of the system or rapidly prototype their applications using our dataset and algorithms.
@@ -41,7 +41,7 @@ If you want to contribute to any layer (including the dataset and applications) 
 ## Citation
 Please cite this as:
 
-Swapnil Sayan Saha, Sandeep Singh Sandha, Siyou Pei, Vivek Jain, Ziqi Wang, Yuchen Li, Ankur Sarker., Mani Srivastava (2022) "AURITUS: An Open-Source Optimization Toolkit for Training and Development of Human Movement Models and Filters Using Earables." (accepted) Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (2022): 1-34.
+Swapnil Sayan Saha, Sandeep Singh Sandha, Siyou Pei, Vivek Jain, Ziqi Wang, Yuchen Li, Ankur Sarker, and Mani Srivastava. 2022. Auritus: An Open-Source Optimization Toolkit for Training and Development of Human Movement Models and Filters Using Earables. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 6, 2, Article 70 (July 2022), 34 pages.
 
 ## Code Credits
 
