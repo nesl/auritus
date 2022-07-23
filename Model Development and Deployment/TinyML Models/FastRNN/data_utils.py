@@ -237,6 +237,3 @@ def import_auritus_activity_dataset_multi_out(dataset_folder = 'Train_Val_test/'
         shuffler = np.random.permutation(X_test.shape[0])
         X_test = X_test[shuffler]
         Y_test = Y_test[shuffler]
-        Y_test = to_categorical(Y_test,9)
-
-
