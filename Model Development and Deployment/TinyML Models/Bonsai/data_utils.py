@@ -60,7 +60,7 @@ def import_auritus_activity_dataset(dataset_folder = 'Train_Val_test/', use_time
     else:
         return X_tr, Y_tr
 
-def import_auritus_activity_dataset_one_out(dataset_folder = 'Train_Val_test/', use_timestamp=False, shuffle=True, window_size = 550, stride = 50,channels=0):
+    def import_auritus_activity_dataset_one_out(dataset_folder = 'Train_Val_test/', use_timestamp=False, shuffle=True, window_size = 550, stride = 50,channels=0):
     if(use_timestamp==True and channels==0):
         X_tr = np.empty([0, window_size, 7])
         X_test = np.empty([0, window_size, 7])
@@ -238,5 +238,3 @@ def import_auritus_activity_dataset_multi_out(dataset_folder = 'Train_Val_test/'
         X_test = X_test[shuffler]
         Y_test = Y_test[shuffler]
         Y_test = to_categorical(Y_test,9)
-
-
